@@ -1,0 +1,97 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>💘 A Very Serious Question</title>
+
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=DM+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="hearts"></div>
+  <div class="vignette"></div>
+
+  <main class="stage" id="stage">
+
+    
+    <section class="scene" id="sceneIntro">
+      <div class="card cinematic">
+        <div class="badge">A ROM COM PRODUCTION</div>
+
+        <h1 class="title">Tonight</h1>
+        <p class="typewriter" id="typewriter"></p>
+
+        <div class="intro-actions">
+          <button class="btn primary" id="startBtn">Start the movie</button>
+          <button class="btn ghost" id="skipBtn">Skip intro</button>
+        </div>
+
+        <p class="tiny">Directed by <span class="name">IshyPoohBear</span>. Starring <span class="name">Us</span>.</p>
+      </div>
+    </section>
+
+    
+    <section class="scene hidden" id="sceneAsk">
+      <div class="card">
+        <h1 class="headline"><span class="scribble">Will you be my Valentine? 💝</span></h1>
+        <p class="sub">This is a legally binding rom com moment.</p>
+
+        <div class="btn-row" id="btnRow">
+          <button id="yesBtn" class="btn primary big">Yes</button>
+          <button id="noBtn" class="btn danger">No</button>
+        </div>
+
+        <p class="tiny" id="noText"></p>
+      </div>
+    </section>
+
+    
+    <section class="scene hidden" id="sceneYes">
+      <div class="card cinematic">
+        <div class="top-row">
+          <div class="badge">SHE SAID YES</div>
+
+          <button class="btn ghost" id="musicBtn">Play music</button>
+          <audio id="song" src="audio/song.mp3" preload="auto"></audio>
+        </div>
+
+        <h1 class="title">Yesssss</h1>
+        <p class="sub">If you are a cat, I am a cat, but funnier.</p>
+
+        <p class="love-letter" id="loveLetter">
+Dear Stella,
+
+I know you always have a million things racing through your beautiful mind, but I want you to know that you never have to worry about us.
+
+I am here for you on your best days and your worst. Through rain or shine, through sleet and snow. To be loved is to be seen and heard, and I promise you will never have to question reassurance because you are never forgotten.
+
+I want you to always know that I choose you. The weird, the good, the cat lover, the romance dreamer, the sardine lover, the dentist, the student, my squirt, and my love.
+
+Happy Valentine’s Day 💖
+        </p>
+
+        <div class="slideshow">
+          <img id="slideImg" src="photos/1.jpg" alt="Us"/>
+          <div class="slideshow-caption" id="slideCaption">Scene 1: Love at first vibe. I was cooked.</div>
+        </div>
+
+        <div class="endcard">
+          <div class="end-title">THE END</div>
+          <div class="end-sub">or really the beginning</div>
+          <div class="credits">Directed by IshyPoohBear Written by Us Produced by Our Love</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
